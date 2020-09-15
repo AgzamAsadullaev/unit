@@ -1,0 +1,90 @@
+.owl-carousel .owl-nav button.owl-prev {
+    width: 52px;
+    height: 52px;
+
+    background-image: url(../../images/carousel/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -20px;
+    transform: translate(-100%, 100%);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    span {
+        display: none;
+    }
+
+    //Media for planshet
+    @media (min-width:768px) {
+        bottom: auto;
+        margin-left: 0;
+        transform: unset;
+
+        top: 0;
+        left: 0px;
+        //transform: translateX(-100%);
+    }
+
+    //Media for desktop
+    @media(min-width: 1200px) {
+        top: 17px;
+        left: -50px;
+        transform: translateX(-100%);
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    width: 52px;
+    height: 52px;
+
+    background-image: url(../../images/carousel/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: 20px;
+    transform: translateY(100%);
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    span {
+        display: none;
+    }
+
+    //Media for planshet
+    @media (min-width:768px) {
+        left: auto;
+        margin-left: 0;
+        transform: unset;
+
+        top: 0;
+        right: 0;
+    }
+
+    //Media for desktop
+    @media(min-width: 1200px) {
+        top: 17px;
+        right: -50px;
+        transform: translateX(100%);
+    }
+}
